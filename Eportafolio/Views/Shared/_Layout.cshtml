@@ -25,6 +25,12 @@
                     <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
                     <li>@Html.ActionLink("Acerca de", "About", "Home")</li>
                     <li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
+
+                    @if (User.Identity.IsAuthenticated)
+                    { 
+                    @*Opciones para el menu admiistrativo*@
+                    <li>@Html.ActionLink("Está es una opción para admin", "Index", "Home")</li>
+                    }
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>

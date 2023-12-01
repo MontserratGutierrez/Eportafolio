@@ -30,9 +30,11 @@
             @Html.DisplayNameFor(model => model.Imagen)
         </dt>
 
+
         <dd>
-            @Html.DisplayFor(model => model.Imagen)
+            <img src="@Url.Content($"~/Content/Img/{Model.Imagen}")" alt="Imagen de proyecto @Model.Nombre" />
         </dd>
+
 
         <dt>
             @Html.DisplayNameFor(model => model.Empresa)

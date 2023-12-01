@@ -59,7 +59,7 @@ namespace Eportafolio.Controllers
                 {
                     //Obtiene el nombre del archivo y el path donde se guardara en la carpeta
                     var filename = Path.GetFileName(ImagenFile.FileName);
-                    var path = Path.Combine(Server.MapPath("~/Content/img/"), filename);
+                    var path = Path.Combine(Server.MapPath("~/Content/Img/"), filename);
 
                     //Guarda el archivo en el path especificado
                     ImagenFile.SaveAs(path);
